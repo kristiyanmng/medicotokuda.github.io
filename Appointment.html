@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--TITLE-->
+        <title>Appointment</title>
+        <!--CSS FILE-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--FAVICON-->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <!--IMPORT FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+        <!--FONT AWESOME FOR MY IMAGES-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
+    </head>
+    <body>
+        <body>
+            <!--APPOINTMENT SECTION-->
+            <section id="appointment">
+                <!--NAVIGATION MENU-->
+                <nav class="navigation">
+                    <!--LOGO-->
+                    <a href="index.html"><img src="images/logo.png" alt="" class="logo" ></a>
+                    <!--MENU-->
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                    </ul>
+                    <!--APPOINTMENT BUTTON-->
+                    <a href="Appointment.html" class="nav-app-btn">Appointment</a>
+                </nav>
+                <style>
+                   
+                    .container {
+                        width: 50%;
+                        margin: 50px auto;
+                        background: #fff;
+                        padding: 20px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                    }
+                    h1 {
+                        text-align: center;
+                        color: #333;
+                    }
+                    form label {
+                        display: block;
+                        margin: 10px 0 5px;
+                        font-weight: bold;
+                    }
+                    form input, form select, form textarea, form button {
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                    form button {
+                        background: #28a745;
+                        color: #fff;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    form button:hover {
+                        background: blue;
+                    }
+                    .checkbox-group {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .checkbox-group input {
+                        width: auto;
+                        margin-right: 10px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Save an Appointment</h1>
+                    <form action="submit_appointment.php" method="POST">
+                        <!-- Лични данни -->
+                        <label for="name">Name and Surname</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                        <label for="email">E-mail address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08XXXXXXXX" required>
+            
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+            
+                        <!-- Информация за срещата -->
+                        <label for="doctor">Select doctor:</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="" disabled selected>Select doctor</option>
+                            <option value="dr_leila_hassan">Dr. Leila Hassan</option>
+                            <option value="dr_tariq_ahmed">Dr. Tariq Ahmed</option>
+                            <option value="dr_amira_saiid">Dr. Amira Saiid</option>
+                            <option value="dr_nadia_farris">Dr. Nadia Farris</option>
+                            <option value="dr_miguel_silva">Dr. Miguel Silva</option>
+                        </select>
+            
+                        <label for="specialty">Department:</label>
+                        <select id="specialty" name="specialty" required>
+                            <option value="" disabled selected>Select department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="gastroenterology">Gastroenterology</option>
+                            <option value="pulmonology">Pulmonology</option>
+                            <option value="orthopedics and traumatology">Orthopedics and Traumatology</option>
+                            <option value="surgery">Surgery</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="obstetrics and gynecology">Obstetrics and Gynecology</option>
+                            <option value="opthamology">Opthamology</option>
+                            <option value="urology">Urology</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                        </select>
+            
+                        <label for="visit_reason">Reason for visit:</label>
+                        <input type="text" id="visit_reason" name="visit_reason" placeholder="For example: Consultation, examination, etc" required>
+            
+                        <label for="date">Select date and time:</label>
+                        <input type="datetime-local" id="date" name="date" required>
+            
+                        <!-- Допълнителна информация -->
+                        <label for="notes">Note/Comment</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Your note and etc information"></textarea>
+            
+                        <!-- Предишен пациент -->
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="returning_patient" name="returning_patient">
+                            <label for="returning_patient">Have you been our patient before?</label>
+                        </div>
+            
+                        <!-- Потвърждение и условия -->
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
+                            <label for="privacy_policy">I agree to <a href="privacy_policy.html">the privacy policy</a>.</label>
+                        </div>
+            
+                        <!-- Бутони -->
+                        <button type="submit">Submit</button>
+                        <button type="reset" style="background: #dc3545;"><a href="index.html" style="color: #ffffff;">Cancel</a></button>
+                    </form>
+                </div>
+            </body>
+            <footer>
+                <div class="footer-container">
+                    <!--**comoany-box**-->
+                    <div class="footer-company-box">
+                        <!--logo-->
+                        <a href="#" class="logo"><span>MEDICO</span>-TOKUDA</a>
+                        <!--details-->
+                        <p>Trusted Care, When You Need It Most.</p>
+                        <!--social-box-->
+                        <div class="footer-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!--**link-box***-->
+                    <div class="footer-link-box">
+                        <strong>Main Link's</strong>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <!--**link-box***-->
+                    <div class="footer-link-box">
+                        
+                    </div>
+                    <!--**link-box***-->
+                    <div class="footer-link-box">
+                        <strong>External Link's</strong>
+                        <ul>
+                            <li><a href="#">Our Product's</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Trem's and Condition's</a></li>
+                        </ul>
+                    </div>
+                    
+            
+                </div>
+            
+                <!--**bottom**********************-->
+                <div class="footer-bottom">
+                    <span class="footer-owner">Made By Kristiyan Markov</span>
+                    <span class="copyright">&#169; Copyright 2024 -  MEDICO - TOKUDA / UNITED ARAB EMIRATES</span>
+                </div>
+            </footer>
+
+    </body>
+</html>
