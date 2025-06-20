@@ -1,0 +1,350 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+  Е-студент
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="site.css" rel="stylesheet" type="text/css" /><link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <script src="/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <link href="/css/footable.min.css" rel="stylesheet" type="text/css" />
+  <style>
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
+</head>
+<body  style="padding: 0px; margin: 0px; width: 100%; height: 100%; font-family:'PT Sans', Arial, Helvetica, sans-serif; ">
+
+<form method="post" action="./izpiti.aspx" id="form1">
+  <div class="aspNetHidden">
+    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+  </div>
+
+  <script type="text/javascript">
+    //<![CDATA[
+    var theForm = document.forms['form1'];
+    if (!theForm) {
+      theForm = document.form1;
+    }
+    function __doPostBack(eventTarget, eventArgument) {
+      if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+      }
+    }
+    //]]>
+  </script>
+
+
+  <script src="/WebResource.axd?d=hCNaYJUGWpYAhDKpqFVzi9ZovJwznwcQITl-y_hV2rSwHraCSQ-g1dCWIOeXsyrMKqTCW1e5hxDep7IiUR9Eh4fxMV-Q6_Fb_2ixKb4qIK81&amp;t=637814725746327080" type="text/javascript"></script>
+
+
+  <script src="/ScriptResource.axd?d=J1oGFFbAq3VvrPQYzd9Q60Ja3paKOh3geL-rHC-2RI9LJHvXnA9fkU-OHe_dcEHLUMEAEhBe0MrTW15E-TpONcjlIpRr2yGJDyVHsuxmaY662u0SDtZ5txEZqAEht0X9H3xHW_pmMMwPGG65Xknf2OqodDBlViHZ-0xiJplsmuI1&amp;t=49337fe8" type="text/javascript"></script>
+  <script src="/ScriptResource.axd?d=7jijMpHWeCcSI0CUT1VlYK2QSN093QE_gDrPNvSdJ2_pSSkxAntJ6RfIHoL3K2OG0AXqasp9u0inYyo-IFjHgjQ7E_RdFfPMoKMYHNXRP_DGdim2MFte_qVbq13xk2nvlMHkFPCCbTNs7iKuofC9qrNSm8tBpgN2GvIAIIeKFWcH0XySRFysUfCQv7mR45he0&amp;t=49337fe8" type="text/javascript"></script>
+  <script src="/ScriptResource.axd?d=flOIguyhDi-l_mCwvScItfz6SNHm3sDjYbkaqdJfF_0KWHC0Gip7SI_Egx4aJKQV5yurYyVED27fkd33roW_1mjiUTPtK7KiC8YDSMF4IliZAnwNJQb1wrRIh_NMImFY8G9Unmg56SSsxmfGCA11Lv-iPqkXG0U6TvUaVpZWWew1&amp;t=49337fe8" type="text/javascript"></script>
+  <div class="aspNetHidden">
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FB5E7873" />
+    <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+    <input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KV4A6kqBiJVfgW9lYfwCAbeHdO15uGYVwck8ichqZ5uqVz1XPkRF6dA6Xu7_HaxhtFCM1yD2BjEK2-ACUEwmQOBWrkPhvVzkFwWVJARXilc1" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="SRjWlQ3C777RkPhC9RcJlkEmF2KaRjyYwz9o87uu2tqOvCaPSmFVWh1yuR0NZgr4FD2fl56a9C4BZbcAL90FMEf6xTNJCDVL03YeH75G5MXqL6spHAsMIomiMZ+qR5PTMOBEcHLq0PJ15i+TKLKal25q44PXVDWw19l+QXdspsMihxACuOL7V9OQNb+bR37fQ6j8fHECmJAH9q1ZhU9ZirmosFFnnUzCM/HJx2KROvDRRx305Z09TJWBa1ywHPRHOo7avBSr1TfJpCUXSJCjaB57xnOcGttSlynBUT9joAQxPRDYL2O0ACvnSrqGO3DIpJvMx5wv03wBkhRtjJKorhM1albaehlg2hDyu9lOFFaxqW8uA6C9SEZ8iVMxKOAWSV73XJ5sABagXauckga4M8X1wboXERK6fvfxlIr6VVXskc0G2jLvjk2CPN4MCWs0JVZt5dr0cKGPHCLyzAvIlcjlwM4pGgKHHJwhh90Wgt9PUzlEeUFOT3TIT9BSB4Py9dRxAlQb9Cdpm1xsHEFt8rx60PANxqzTLMqChlLH5OHB/QuVXcVnqQdSXVKoxZ6gsRVnrd1CsDK9BuKS2oYIgizRozCe14DmSjCvQqWuvYpxHOTuPpudDXN1EseksStz9Q+xPNNAaBwb9Xz8+zF9sjU7jPENl4A826AucQRTNTuT4JU8dq4lXwH2eLSqp31t4DUEjIwWzv1Z2kHg89DTMNd8J7y6vvo8VxhmSDkDxEM=" />
+  </div>
+  <script type="text/javascript">
+    //<![CDATA[
+    Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$UpdatePanel2','UpdatePanel2','tctl00$UpdatePanel1','UpdatePanel1'], [], [], 90, 'ctl00');
+    //]]>
+  </script>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td bgcolor="#1862A3" valign="middle" style="padding: 2px">
+        <div id="UpdatePanel2" style="position: fixed; top: 0; left: 0;">
+
+          <span id="l_session">-</span>
+
+        </div>
+        <a href ="/student/">
+          <img alt="" src="e-st_logo.jpg" style="width: 157px; height: 35px" />
+        </a>
+      </td>
+      <td bgcolor="#1862A3" align="right" style="padding: 2px" valign="middle">
+
+
+
+        <input type="submit" name="ctl00$Button2" value="Начало" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Button2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/student/&quot;, false, false))" id="Button2" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+
+        <input type="submit" name="ctl00$b_uniemail" value="Служебна поща" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_uniemail&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/student/uniemail.aspx&quot;, false, false))" id="b_uniemail" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+
+        <input type="submit" name="ctl00$b_tres" value="Учебни ресурси" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_tres&quot;, &quot;&quot;, false, &quot;&quot;, &quot;tres/Default.aspx&quot;, false, false))" id="b_tres" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+
+
+
+
+
+        <input type="submit" name="ctl00$b_uchplan" value="Учебен план" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_uchplan&quot;, &quot;&quot;, false, &quot;&quot;, &quot;plan/Default.aspx&quot;, false, false))" id="b_uchplan" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+
+        <input type="submit" name="ctl00$b_messages" value="Съобщения" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_messages&quot;, &quot;&quot;, false, &quot;&quot;, &quot;messages/inbox.aspx&quot;, false, false))" id="b_messages" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+        <input type="submit" name="ctl00$b_settings" value="Настройки" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_settings&quot;, &quot;&quot;, false, &quot;&quot;, &quot;settings/Default.aspx&quot;, false, false))" id="b_settings" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+
+        <input type="submit" name="ctl00$Button1" value="Изход" id="Button1" style="color:White;background-color:#1E79CC;border-color:#1862A3;height:30px;" />
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#1862A3" valign="middle" colspan="2"
+          style="padding: 0px 2px 2px 2px">
+        <table cellspacing="0" id="fv_studinfo" style="color:White;height:30px;width:100%;border-collapse:collapse;">
+          <tr>
+            <td colspan="2">
+              ПИН:
+              <span id="fv_studinfo_idnLabel" style="font-weight:bold;">2409010748</span>
+              План №:
+              <span id="fv_studinfo_plannumbLabel" style="font-weight:bold;">2023362</span>
+              Факултетен №:
+              <span id="fv_studinfo_fnLabel" style="font-weight:bold;">2409010748</span>
+              Име:
+              <span id="fv_studinfo_nameLabel" style="font-weight:bold;">Кристиян Миленов Марков</span>
+              Група:
+              <span id="fv_studinfo_grupaLabel" style="font-weight:bold;">1</span>
+
+              <span id="fv_studinfo_l_status">Статус:</span>
+              <span id="fv_studinfo_status_textLabel" style="font-weight:bold;">Учи</span>
+              <br />
+              Специалност/Образователна програма:
+              <span id="fv_studinfo_specnameLabel" style="font-weight:bold;">Софтуерно инженерство</span>
+              Форма:
+              <span id="fv_studinfo_formobLabel" style="font-weight:bold;">Редовна</span>
+              Брой зав.:
+              <span id="fv_studinfo_countzavLabel" style="font-weight:bold;">0</span>
+
+              <span id="fv_studinfo_l_uniemail" title="Вижте Служебна поща">S2409010748@sd.uni-vt.bg</span>
+            </td>
+          </tr>
+        </table>
+
+        <table cellspacing="0" id="fv_linked_profiles" style="color:White;border-collapse:collapse;">
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%">
+    <tr>
+      <td valign="top" width="200px">
+        <div id="Panel1" style="width:200px;">
+
+          <table >
+            <tr>
+              <td align="center">
+                <img id="photo" src="getphoto.png" style="width:120px;" />
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a id="hl_guide_rzo" class="btn btn-warning" href="https://est.uni-vt.bg/student/ugrzo.pdf" target="_blank" style="display:inline-block;color:Black;width:200px;">Ръководство за работа РЗ</a>
+                <br />
+
+              </td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="P_persmenu" style="width:200px;">
+
+          <table >
+
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_persdata" value="Персонални данни" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_persdata&quot;, &quot;&quot;, false, &quot;&quot;, &quot;stpersdata.aspx&quot;, false, false))" id="b_persdata" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_izpiti" value="Изучавани дисциплини" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_izpiti&quot;, &quot;&quot;, false, &quot;&quot;, &quot;izpiti.aspx&quot;, false, false))" id="b_izpiti" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_molbi" value="Молби / Заявления" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_molbi&quot;, &quot;&quot;, false, &quot;&quot;, &quot;molbi.aspx&quot;, false, false))" id="b_molbi" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_molbi0" value="Индивидуални протоколи" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_molbi0&quot;, &quot;&quot;, false, &quot;&quot;, &quot;iprots.aspx&quot;, false, false))" id="b_molbi0" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_zapovedi" value="Заповеди" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_zapovedi&quot;, &quot;&quot;, false, &quot;&quot;, &quot;zapovedi.aspx&quot;, false, false))" id="b_zapovedi" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_zaverki" value="Заверени семестри" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_zaverki&quot;, &quot;&quot;, false, &quot;&quot;, &quot;zaverki.aspx&quot;, false, false))" id="b_zaverki" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_taksi" value="Платени такси" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_taksi&quot;, &quot;&quot;, false, &quot;&quot;, &quot;pltaksi.aspx&quot;, false, false))" id="b_taksi" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_dipl" value="Държавни изпити" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_dipl&quot;, &quot;&quot;, false, &quot;&quot;, &quot;di.aspx&quot;, false, false))" id="b_dipl" class="btn btn-primary" style="width:200px;" />
+              </td>
+            </tr>
+          </table>
+
+
+
+
+        </div>
+        <div id="p_planmenu" style="width:200px;">
+
+
+          <table>
+            <tr>
+              <td>
+                <hr width="190px" class="nobefore noafter"></td>
+            </tr>
+            <tr>
+              <td>
+
+                <input type="submit" name="ctl00$b_grzan" value="График на занятията" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_grzan&quot;, &quot;&quot;, false, &quot;&quot;, &quot;spr/grzan.aspx&quot;, false, false))" id="b_grzan" class="btn btn-info " style="width:200px;" />
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+                <input type="submit" name="ctl00$Button6" value="Филтриран график на занятията" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Button6&quot;, &quot;&quot;, false, &quot;&quot;, &quot;spr/grzanforprofile.aspx&quot;, false, false))" id="Button6" class="btn btn-success " style="height:65px;width:200px;" />
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+                <input type="submit" name="ctl00$b_grizp" value="График на изпитите" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_grizp&quot;, &quot;&quot;, false, &quot;&quot;, &quot;spr/grizpiti.aspx&quot;, false, false))" id="b_grizp" class="btn btn-info  " style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr width="190px" class="nobefore noafter"></hr>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$b_grizp0" value="Молба за общежитие" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$b_grizp0&quot;, &quot;&quot;, false, &quot;&quot;, &quot;spr/mob.aspx&quot;, false, false))" id="b_grizp0" class="btn btn-default" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr width="190px" class="nobefore noafter"></hr>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$Button3" value="Анкетни проучвания" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Button3&quot;, &quot;&quot;, false, &quot;&quot;, &quot;anketi/&quot;, false, false))" id="Button3" class="btn btn-default" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="ctl00$Button5" value="Анкети за дисциплини" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Button5&quot;, &quot;&quot;, false, &quot;&quot;, &quot;anketi/fordisc/&quot;, false, false))" id="Button5" class="btn btn-default" style="width:200px;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+
+
+
+              </td>
+            </tr>
+
+
+          </table>
+
+
+        </div>
+      </td>
+      <td valign="top" width="100%">
+
+        <div id="ContentPlaceHolder2_p_izpiti" class="table-responsive">
+          <fieldset>
+            <legend>
+              Резултати от изпитите
+            </legend>
+            <div>
+              <table class="footable" cellspacing="0" cellpadding="4" id="ContentPlaceHolder2_gv_izpiti" style="color:#333333;width:100%;border-collapse:collapse;">
+                <tr style="color:White;background-color:#507CD1;font-weight:bold;">
+                  <th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$SEMES&#39;)" style="color:White;">Сем.</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$name&#39;)" style="color:White;">Дисциплина</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$SUM_OF_LEK&#39;)" style="color:White;">Л</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$SUM_OF_UPR&#39;)" style="color:White;">У</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$ocdumi&#39;)" style="color:White;">Оценка</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$occifri&#39;)" style="color:White;"></a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$polkrediti&#39;)" style="color:White;">Кр.</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder2$gv_izpiti&#39;,&#39;Sort$titul&#39;)" style="color:White;">Преподавател</a></th><th scope="col">Протокол</th>
+                </tr><tr style="background-color:#EFF3FB;">
+                <td>1</td><td>Бази от данни</td><td>30</td><td>30</td><td>добър</td><td>4</td><td>7</td><td>проф. дн Цветанка Любомирова Георгиева-Трифонова</td><td>s74894</td>
+              </tr><tr style="background-color:White;">
+                <td>1</td><td>Български език и стил</td><td>0</td><td>30</td><td>добър</td><td>4</td><td>3</td><td>ас. Анита Иванова Тодоранова-Душкова</td><td>s74895</td>
+              </tr><tr style="background-color:#EFF3FB;">
+                <td>1</td><td>Операционни системи</td><td>15</td><td>30</td><td>мн. добър</td><td>5</td><td>6</td><td>проф. д-р Емилия Стойчева Тодорова</td><td>s74897</td>
+              </tr><tr style="background-color:White;">
+                <td>1</td><td>Увод в програмирането</td><td>30</td><td>60</td><td>неположен</td><td>-</td><td>0</td><td>доц. д-р Златко Георгиев Върбанов</td><td>s74898</td>
+              </tr><tr style="background-color:#EFF3FB;">
+                <td>1</td><td>Увод в уеб технологиите</td><td>30</td><td>60</td><td>мн. добър</td><td>5</td><td>7</td><td>доц. д-р Юлиана Стоянова Дошкова-Тодорова</td><td>s74899</td>
+              </tr><tr style="background-color:White;">
+                <td>2</td><td>Английски език</td><td>0</td><td>60</td><td>отличен</td><td>6</td><td>4</td><td>ст.преп. Анелия Александрова Иванова</td><td>s78434</td>
+              </tr><tr style="background-color:#EFF3FB;">
+                <td>2</td><td>Компютърни мрежи</td><td>15</td><td>30</td><td>добър</td><td>4</td><td>5</td><td>проф. дн Олег Димитров Асенов</td><td>s78435</td>
+              </tr><tr style="background-color:White;">
+                <td>2</td><td>Линейна алгебра и аналитична геометрия</td><td>45</td><td>45</td><td>среден</td><td>3</td><td>6</td><td>проф. д-р Галя Василева Накова</td><td>s78436</td>
+              </tr><tr style="background-color:#EFF3FB;">
+                <td>2</td><td>Микроконтролери и вградени устройства</td><td>30</td><td>30</td><td>мн. добър</td><td>5</td><td>5</td><td>проф. д-р Мирослав Николов Гълъбов</td><td>s78437</td>
+              </tr><tr style="background-color:White;">
+                <td>2</td><td>Обектно ориентирано програмиране</td><td>30</td><td>30</td><td>добър</td><td>4</td><td>5</td><td>доц. д-р Ивайло Петров Дончев</td><td>s78438</td>
+              </tr><tr style="background-color:#EFF3FB;">
+                <td>2</td><td>Съвременни ORM библиотеки</td><td>15</td><td>45</td><td>неположен</td><td>-</td><td>0</td><td>гл.ас. д-р Даниел Иванов Дамянов</td><td>s78439</td>
+              </tr><tr style="background-color:White;">
+                <td>2</td><td>Физическо възпитание и спорт</td><td>0</td><td>30</td><td>отличен</td><td>6</td><td>2</td><td>гл.ас. д-р Данаил Михайлов Киров</td><td>s78440</td>
+              </tr>
+              </table>
+            </div>
+
+
+          </fieldset>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <div id="UpdatePanel1">
+
+    <span id="Timer1" style="visibility:hidden;display:none;"></span>
+
+  </div>
+
+
+  <script type="text/javascript">
+    //<![CDATA[
+    Sys.Application.add_init(function() {
+      $create(Sys.UI._Timer, {"enabled":true,"interval":300000,"uniqueID":"ctl00$Timer1"}, null, null, $get("Timer1"));
+    });
+    //]]>
+  </script>
+</form>
+</body>
+</html>
